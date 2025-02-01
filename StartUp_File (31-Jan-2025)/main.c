@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 
-int main(void) {
+int main() {
     int num = 3;
     printf("The number is = %d", num);
 
