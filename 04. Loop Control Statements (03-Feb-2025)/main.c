@@ -10,6 +10,20 @@ int main() {
         printf("%d X %d = %d \n", multiplyNum, i, multiplyNum * i);
     }
 
+    // Printing 20 times hello world using while loop
+    int couNum = 1;
+    while(couNum <= 20) {
+        printf("%d. HELLO World \n", couNum);
+        couNum++;
+    }
+
+    // Odd number giving loop
+    int evenNum;
+    do {
+        printf("Give a Number: ");
+        scanf("%d", &evenNum);
+    } while(evenNum % 2 != 0);
+    printf("Finali u have given a even");
 
 
 
