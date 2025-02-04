@@ -5,6 +5,9 @@ void printBon();
 int numSum(int num1, int num2);
 void multiplyTable(int num);
 
+// Recursion
+void recursive(int count);
+
 int main() {
     // Q: Printing bonjorr if user is french and print hello if user is american
 
@@ -32,6 +35,8 @@ int main() {
 
     multiplyTable(sumResult);
 
+    recursive(0);
+
     return 0;
 }
 
@@ -54,6 +59,14 @@ void multiplyTable(int num) {
     }
 }
 
+// Recursion
+void recursive(int count) {
+    if(count == 10) {
+        return;
+    }
+    printf("%d. Hello world \n", count);
+    recursive(count + 1);
+}
 
 
 
