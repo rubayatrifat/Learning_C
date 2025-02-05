@@ -5,6 +5,14 @@ void calculateSq(int* num) {
     printf("square is : %d \n", *num);
 }
 
+void swapValue(int* aValue, int* bValue, int* c) {
+    *c = *bValue;
+    *bValue = *aValue;
+    *aValue = *c;
+
+    printf("'a' value = %d | 'b' value = %d \n", *aValue, *bValue);
+}
+
 int main() {
     int age = 45;
     int *pointer = &age;
@@ -29,7 +37,15 @@ int main() {
     // Call by reference function using pointer
     int num = 5;
     calculateSq(&num);
-    printf("%d", num);
+    printf("%d \n", num);
+
+
+    // Practice -> swap two variable value a and b
+    int a = 3;
+    int b = 7;
+    int c;
+    swapValue(&a, &b, &c);
+    printf("a = %d | b = %d | c = %d \n", a, b, c);
 
     return 0;
 }
